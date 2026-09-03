@@ -1,0 +1,68 @@
+# Python and tooling
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+.venv/
+venv/
+.pyside6-build-probe/
+.firecrawl/
+
+# Build artifacts
+build/
+dist/
+*.spec
+*.exe
+*.msi
+graphify-out/
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Secrets and local runtime data
+.env
+.env.*
+!.env.example
+*.token
+*.credential
+*.credentials
+credentials.dat
+workcalls.db
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Media and private transcription output
+*.mkv
+*.mp4
+*.mov
+*.webm
+*.avi
+*.m4a
+*.mp3
+*.wav
+*.flac
+transcript.json
+transcript.txt
+transcript.srt
+transcript.vtt
+transcript.tsv
+manifest.json
+
+# Runtime roots must never be committed if placed under the repository
+WorkCalls/
+Inbox/
+Archive/
+Temp/
+Logs/
+State/

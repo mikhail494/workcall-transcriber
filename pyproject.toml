@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workcall-transcriber"
+version = "0.1.0"
+description = "A local Windows tray utility for safe OBS work-call transcription."
+requires-python = ">=3.12"
+dependencies = [
+    # 6.10.3 cannot import QtWidgets after PyInstaller freeze on this supported
+    # Windows 10 build; 6.9.3 was validated with the real packaged executable.
+    "PySide6==6.9.3",
+    "watchdog>=5,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "pytest-qt>=4.5,<5",
+    "ruff>=0.8,<1",
+    "pyinstaller>=6.11,<7",
+]
+
+[project.scripts]
+workcall-transcriber = "workcall_transcriber.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["build", "dist", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+# Long translatable UI messages and Qt style sheets are intentionally kept as
+# single literals; Ruff still enforces all substantive correctness checks.
+ignore = ["E501"]

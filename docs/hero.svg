@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">WorkCall Transcriber</title>
+  <desc id="desc">Local Windows transcription for OBS recordings with WhisperX and GPU acceleration.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0d10"/><stop offset="1" stop-color="#161a20"/></linearGradient></defs>
+  <rect width="1400" height="420" rx="32" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="1397" height="417" rx="30.5" fill="none" stroke="#2b313b" stroke-width="3"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="700" y="108" fill="#ffffff" font-size="62" font-weight="800" text-anchor="middle" letter-spacing="-2">WorkCall Transcriber</text>
+    <text x="700" y="151" fill="#9aa4b2" font-size="23" text-anchor="middle">Local recordings in. Searchable transcripts out.</text>
+    <g transform="translate(160 228)"><rect width="310" height="96" rx="18" fill="#11151a" stroke="#39414d" stroke-width="2"/><text x="155" y="41" fill="#ffffff" font-size="22" font-weight="700" text-anchor="middle">OBS recording</text><text x="155" y="68" fill="#8d98a6" font-size="16" text-anchor="middle">local intake</text></g>
+    <g transform="translate(545 228)"><rect width="310" height="96" rx="18" fill="#f3f4f6"/><text x="155" y="41" fill="#0c0f13" font-size="22" font-weight="800" text-anchor="middle">WhisperX</text><text x="155" y="68" fill="#39414d" font-size="16" text-anchor="middle">CUDA transcription</text></g>
+    <g transform="translate(930 228)"><rect width="310" height="96" rx="18" fill="#11151a" stroke="#39414d" stroke-width="2"/><text x="155" y="41" fill="#ffffff" font-size="22" font-weight="700" text-anchor="middle">Archive</text><text x="155" y="68" fill="#8d98a6" font-size="16" text-anchor="middle">TXT · SRT · VTT · JSON</text></g>
+    <path d="M478 276h58" stroke="#7f8a99" stroke-width="4"/><path d="M864 276h58" stroke="#7f8a99" stroke-width="4"/>
+    <text x="700" y="383" fill="#6f7a89" font-size="18" text-anchor="middle">record → transcribe → align → archive</text>
+  </g>
+</svg>

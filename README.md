@@ -1,8 +1,19 @@
+<div align="center">
+
 # WorkCall Transcriber
 
-WorkCall Transcriber is a local Windows desktop and tray utility that turns OBS call recordings into timestamped WhisperX transcripts without uploading recordings to a service.
+**Local Windows transcription for OBS call recordings with WhisperX, GPU acceleration, durable job state, and optional speaker diarization.**
 
-It owns its application data under `D:\WorkCalls` and deliberately reuses the existing `D:\WhisperWork\.venv` for GPU transcription. The application does not install into, modify, or delete anything from that external WhisperX environment.
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-10%2B-0078D4?style=flat-square&logo=windows11&logoColor=white)
+![WhisperX](https://img.shields.io/badge/WhisperX-local%20GPU-111111?style=flat-square)
+![Storage](https://img.shields.io/badge/recordings-local%20only-111111?style=flat-square)
+
+[Everyday use](#everyday-use) · [Build and install](#build-and-install) · [Security](#security-and-safety) · [Architecture](ARCHITECTURE.md) · [Handoff](HANDOFF.md)
+
+</div>
+
+WorkCall Transcriber keeps its application data under `D:\WorkCalls` and deliberately reuses the existing `D:\WhisperWork\.venv` for GPU transcription. It does not install into, modify, or delete anything from that external WhisperX environment.
 
 ## What it does
 

@@ -8,6 +8,7 @@
 
 **Local Windows transcription for OBS call recordings with WhisperX, GPU acceleration, durable job state, and optional speaker diarization.**
 
+[![CI](https://github.com/mikhail494/workcall-transcriber/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mikhail494/workcall-transcriber/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-10%2B-0078D4?style=flat-square&logo=windows11&logoColor=white)
 ![WhisperX](https://img.shields.io/badge/WhisperX-local%20GPU-111111?style=flat-square)
